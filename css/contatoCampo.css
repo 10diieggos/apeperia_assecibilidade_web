@@ -26,8 +26,10 @@
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
 }
 
-.contatoCampo-checkbox {
-  display: none;
+#receberDestaques {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
 }
 
 .contatoCampo-icone {

@@ -299,10 +299,10 @@
             Assine nossa newsletter para receber notícias técnicas sem spam!
           </h2>
           <form class="dialogNewsletter-form">
-            <label class="dialogNewsletter-label">
+            <label for="" class="dialogNewsletter-label">
               Email:
             </label>
-            <input type="text" class="dialogNewsletter-campo" placeholder="Digite seu e-mail...">
+            <input id="" type="text" class="dialogNewsletter-campo" placeholder="Digite seu e-mail...">
             <button class="dialogNewsletter-btn">
               Assinar newsletter
             </button>
@@ -330,57 +330,57 @@
           </p>
 
           <div class="contatoCampo contatoCampo--sucesso">
-            <label>Nome: </label>
-            <input type="text" class="contatoCampo--validouFoi" value="Natan Souza" required>
+            <label for="nomeContato">Nome: </label>
+            <input id="nomeContato" type="text" class="contatoCampo--validouFoi" value="Natan Souza" required>
           </div>  
 
           <div class="contatoCampo contatoCampo--erro">
-            <label>Email: </label>
-            <input type="email" class="contatoCampo--validouErro" required>
+            <label for="emailContato">Email: </label>
+            <input id="emailContato" type="email" class="contatoCampo--validouErro" required>
             <span class="contatoCampo-msg contatoCampo-msg--erro">
               Você quis dizer <a href="#">gmail.com?</a>
             </span>
           </div>
 
           <div class="contatoCampo contatoCampo--erro">
-            <label>Telefone: </label>
-            <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
+            <label for="telefoneContato">Telefone: </label>
+            <input id="telefoneContato" type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
             <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
           </div>     
 
           <div class="contatoCampo">
-            <label>CEP: </label>
-            <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+            <label for="cepContato">CEP: </label>
+            <input id="cepContato" type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
           </div>
 
           <div class="contatoCampo">
-            <label>Endereço: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+            <label for="enderecoContato">Endereço: </label>
+            <input id="enderecoContato" type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
           </div>   
 
           <div class="contatoCampo">
-            <label>Bairro: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
+            <label for="bairroContato">Bairro: </label>
+            <input id="bairroContato" type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
           </div>   
 
           <div class="contatoCampo">
-            <label>Cidade: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+            <label for="cidedeContato">Cidade: </label>
+            <input id="cidedeContato" type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
           </div>   
 
           <div class="contatoCampo">
-            <label>Estado: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
+            <label for="estadoContato">Estado: </label>
+            <input id="estadoContato" type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
           </div>   
 
           <div class="contatoCampo">
-            <label>Mensagem: </label>
-            <textarea name="" cols="30" rows="10" required></textarea>
+            <label for="mensagemContato">Mensagem: </label>
+            <textarea id="mensagemContato" name="" cols="30" rows="10" required></textarea>
           </div>
 
           <div class="contatoCampo">
-            <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox">
-            <label class="contatoCampo-label">Receber destaques por email</label>
+            <input id="receberDestaques" type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox">
+            <label for="receberDestaques" class="contatoCampo-label">Receber destaques por email</label>
           </div>
 
           <div class="contatoCampo">

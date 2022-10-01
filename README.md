@@ -1,5 +1,9 @@
 # Projeto Apeperia focado em Acessibilidade.
 
+## Deploy do projeto
+
+https://foul-iris-speedwell.glitch.me/
+
 ## Escopo
 
 Este projeto é focado em boas práticas de Acessibilidade e foi reproduzido passo-a-passo por mim durante as aulas dos cursos:

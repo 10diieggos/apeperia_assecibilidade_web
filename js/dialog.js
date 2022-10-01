@@ -9,6 +9,7 @@ btnAbreDialog.style.display = 'block';
 // Quando abrir a dialog...
 btnAbreDialog.addEventListener('click', function() {
   dialog.classList.add('dialogNewsletter--aberto');
+  document.querySelector('#dialogRecebeEmail').focus()
 });
 
 function fechandoDialog() {

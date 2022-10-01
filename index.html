@@ -293,10 +293,10 @@
         </button>
       </div>
 
-      <div class="dialogNewsletter" id="dialogNewsletter">
+      <div class="dialogNewsletter" id="dialogNewsletter" role="dialog" aria-labelledby="dialogTitle">
         <div class="dialogNewsletter-body">
 
-          <h2 class="dialogNewsletter-titulo">News sem spam</h2>
+          <h2 id="dialogTitle" class="dialogNewsletter-titulo">News sem spam</h2>
           <h2 class="dialogNewsletter-texto">
             Assine nossa newsletter para receber notícias técnicas sem spam!
           </h2>
@@ -304,7 +304,7 @@
             <label for="" class="dialogNewsletter-label">
               Email:
             </label>
-            <input id="" type="text" class="dialogNewsletter-campo" placeholder="Digite seu e-mail...">
+            <input id="dialogRecebeEmail" type="text" class="dialogNewsletter-campo" placeholder="Digite seu e-mail...">
             <button class="dialogNewsletter-btn">
               Assinar newsletter
             </button>

@@ -12,13 +12,17 @@ btnAbreDialog.addEventListener('click', function() {
   document.querySelector('#dialogRecebeEmail').focus()
   let inertList = document.querySelectorAll('.pularNavegacao, header, footer, section:not(.doNotAplyInert)')
   for (let i = 0; i < inertList.length; i++) {
-    inertList[i].inert = "true";
+    inertList[i].inert = true;
   }
 });
 
 function fechandoDialog() {
   document.activeElement.blur();
-  dialog.classList.remove('dialogNewsletter--aberto');     
+  dialog.classList.remove('dialogNewsletter--aberto');   
+  let inertList = document.querySelectorAll('.pularNavegacao, header, footer, section:not(.doNotAplyInert)')
+  for (let i = 0; i < inertList.length; i++) {
+    inertList[i].inert = false;
+  }
 }
 
 // Listeners

@@ -10,6 +10,10 @@ btnAbreDialog.style.display = 'block';
 btnAbreDialog.addEventListener('click', function() {
   dialog.classList.add('dialogNewsletter--aberto');
   document.querySelector('#dialogRecebeEmail').focus()
+  let inertList = document.querySelectorAll('.pularNavegacao, header, footer, section:not(.doNotAplyInert)')
+  for (let i = 0; i < inertList.length; i++) {
+    inertList[i].inert = "true";
+  }
 });
 
 function fechandoDialog() {

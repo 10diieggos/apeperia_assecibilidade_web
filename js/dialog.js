@@ -1,33 +1,31 @@
 // Variáveis
-var btnAbreDialog = document.querySelector('#abreDialog');
-var dialog = document.querySelector('.dialogNewsletter');
-var dialogBody = document.querySelector('.dialogNewsletter-body');
-var dialogOverlay = document.querySelector('.dialogNewsletter-overlay');
-
+var btnAbreDialog = document.querySelector('#abreDialog')
+var dialog = document.querySelector('.dialogNewsletter')
+var dialogBody = document.querySelector('.dialogNewsletter-body')
+var dialogOverlay = document.querySelector('.dialogNewsletter-overlay')
+let inertList = document.querySelectorAll('.pularNavegacao, header, footer, section:not(.doNotAplyInert)')
 //Métodos
 var applyInertToElementsOutsideTheModal = (inert) => {
-  let inertList = document.querySelectorAll('.pularNavegacao, header, footer, section:not(.doNotAplyInert)')
-  for (let i = 0; i < inertList.length; i++) {
-    inertList[i].inert = inert;
-  }
-
+  inertList.forEach((item) => {
+        item.inert = inert
+    })
 }
 
-btnAbreDialog.style.display = 'block';
+btnAbreDialog.style.display = 'block'
 
 // Quando abrir a dialog...
 btnAbreDialog.addEventListener('click', function() {
-  dialog.classList.add('dialogNewsletter--aberto');
+  dialog.classList.add('dialogNewsletter--aberto')
   document.querySelector('#dialogRecebeEmail').focus()
   applyInertToElementsOutsideTheModal(true)
-});
+})
 
 function fechandoDialog() {
-  document.activeElement.blur();
-  dialog.classList.remove('dialogNewsletter--aberto');   
+  document.activeElement.blur()
+  dialog.classList.remove('dialogNewsletter--aberto')   
   applyInertToElementsOutsideTheModal(false)
   btnAbreDialog.focus()
 }
 
 // Listeners
-document.querySelector('.dialogNewsletter-fechar').addEventListener('click', fechandoDialog);
+document.querySelector('.dialogNewsletter-fechar').addEventListener('click', fechandoDialog)

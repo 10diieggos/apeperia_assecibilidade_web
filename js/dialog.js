@@ -35,3 +35,5 @@ document.addEventListener('keyup', (event) => {
     fechandoDialog()
   }
 })
+
+dialogOverlay.addEventListener('click', fechandoDialog)

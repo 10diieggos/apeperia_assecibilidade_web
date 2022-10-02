@@ -29,3 +29,9 @@ function fechandoDialog() {
 
 // Listeners
 document.querySelector('.dialogNewsletter-fechar').addEventListener('click', fechandoDialog)
+
+document.addEventListener('keyup', (event) => {
+  if (event.key === 'Escape') {
+    fechandoDialog()
+  }
+})

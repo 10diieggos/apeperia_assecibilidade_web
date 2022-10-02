@@ -26,6 +26,7 @@ function fechandoDialog() {
   document.activeElement.blur();
   dialog.classList.remove('dialogNewsletter--aberto');   
   applyInertToElementsOutsideTheModal(false)
+  btnAbreDialog.focus()
 }
 
 // Listeners

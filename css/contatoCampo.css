@@ -20,10 +20,30 @@
   transition: .2s ease-in;
 }
 
+.contatoCampo-checkbox:hover + .contatoCampo-label:before,
+.contatoCampo-checkbox:focus + .contatoCampo-label:before {
+  border: 3px solid blue;
+}
+
+.contatoCampo-label {
+  position: relative;
+}
+
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
-  content: 'x';
-  color: #fff;
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
+}
+
+.contatoCampo-checkbox:checked + .contatoCampo-label:after {
+  position: absolute;
+  left: -3px;
+  top: 4px;
+  width: 5px;
+  content: '';
+  height: 5px;
+  width: 10px;
+  border-left: white 3px solid;
+  border-bottom: white 3px solid;
+  transform: rotate(-45deg);
 }
 
 #receberDestaques {

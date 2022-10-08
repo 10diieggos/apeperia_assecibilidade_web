@@ -83,7 +83,7 @@ li[aria-hidden='false'] { display:block ; }
   cursor: pointer;
 }
 
-.btnPadrao--pequeno {
+.btnPadrao--pequeno { 
   font-size: 1em;
 }
 

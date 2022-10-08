@@ -14,8 +14,8 @@ document.querySelector('.listaDeArtigos-slider-item').append(indicadorSlideAtual
 
 // Percorre todos os botoes controladores
 btns.forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    
+  btn.addEventListener('click', function(event) {
+    event.preventDefault();
     document.querySelector('#indicadorSlideAtual').remove()   
     // Remove a classe 'ativo' do artigo atual
     artigos.forEach((artigo) => {

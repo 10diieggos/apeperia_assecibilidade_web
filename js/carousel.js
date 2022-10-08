@@ -2,13 +2,21 @@ var artigo1 = document.querySelector('#new0')
 var btns = document.querySelectorAll('.listaDeArtigos-slider-item');
 var artigos = document.querySelectorAll('.listaDeArtigos-item');
 
+//cria o elemento para ser utilizado no botão ativo do slider
+//<span class="escondeVisualmente" id="indicadorSlideAtual">Slide atual</span>
+var indicadorSlideAtual = document.createElement('span')
+// indicadorSlideAtual.classList.add('escondeVisualmente')
+indicadorSlideAtual.textContent = 'Slide atual';
+indicadorSlideAtual.id = 'indicadorSlideAtual';
 
 artigo1.style.display = 'block';
+document.querySelector('.listaDeArtigos-slider-item').append(indicadorSlideAtual);
 
 // Percorre todos os botoes controladores
 btns.forEach(function(btn) {
   btn.addEventListener('click', function() {
     
+    document.querySelector('#indicadorSlideAtual').remove()   
     // Remove a classe 'ativo' do artigo atual
     artigos.forEach((artigo) => {
       artigo.style.display = 'none';
@@ -24,5 +32,6 @@ btns.forEach(function(btn) {
     })
     // Ativa apenas o botão que foi clicado
     this.classList.add('listaDeArtigos-slider-item--ativo')
+    this.append(indicadorSlideAtual)
   })
 })

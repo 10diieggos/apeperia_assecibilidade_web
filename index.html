@@ -335,26 +335,26 @@
 
             <div class="contatoCampo contatoCampo--sucesso">
               <label for="nomeContato">Nome: </label>
-              <input id="nomeContato" type="text" class="contatoCampo--validouFoi" placeholder="Nome completo" required>
+              <input id="nomeContato" type="text" class="validarEsteCampo" placeholder="Nome completo" required>
             </div>  
 
-            <div class="contatoCampo contatoCampo--erro">
+            <div class="contatoCampo">
               <label for="emailContato">Email: </label>
-              <input id="emailContato" type="email" class="contatoCampo--validouErro" placeholder="seu_email@dominio" required>
+              <input id="emailContato" type="email" class="validarEsteCampo" placeholder="seu_email@dominio" required>
               <span class="contatoCampo-msg contatoCampo-msg--erro">
                 Você quis dizer <a href="#">gmail.com?</a>
               </span>
             </div>
 
-            <div class="contatoCampo contatoCampo--erro">
+            <div class="contatoCampo">
               <label for="telefoneContato">Telefone: </label>
-              <input id="telefoneContato" type="tel" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
+              <input id="telefoneContato" type="tel" class="validarEsteCampo" placeholder="(11) 5571-2751">
               <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
             </div>     
 
             <div class="contatoCampo">
               <label for="cepContato">CEP: </label>
-              <input id="cepContato" type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+              <input id="cepContato" type="text" class="validarEsteCampo" maxlength="8" placeholder="Exemplo: 04101-300" required>
             </div>
 
             <div class="contatoCampo">
@@ -379,7 +379,7 @@
 
             <div class="contatoCampo">
               <label for="mensagemContato">Mensagem: </label>
-              <textarea id="mensagemContato" name="" cols="30" rows="10" required></textarea>
+              <textarea id="mensagemContato" class="validarEsteCampo" name="" cols="30" rows="10" required></textarea>
             </div>
 
             <div class="contatoCampo">
@@ -465,7 +465,8 @@
 
   </footer>
   <script src="js/carousel.js"></script>
-  <script src="js/inert.js"></script>
   <script src="js/dialog.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/inert.js"></script>
 </body>
 </html>

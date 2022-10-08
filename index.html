@@ -327,75 +327,75 @@
         </h2>
 
         <form class="secaoContato-form">
+          <fieldset>
+            <legend class="secaoContato-form-legend">
+              Oi, tudo bem? Fale com a gente!
+              Preencha seus dados e sua mensagem:
+            </legend>
 
-          <p class="secaoContato-form-legend">
-            Oi, tudo bem? Fale com a gente!
-            Preencha seus dados e sua mensagem:
-          </p>
+            <div class="contatoCampo contatoCampo--sucesso">
+              <label for="nomeContato">Nome: </label>
+              <input id="nomeContato" type="text" class="contatoCampo--validouFoi" placeholder="Nome completo" required>
+            </div>  
 
-          <div class="contatoCampo contatoCampo--sucesso">
-            <label for="nomeContato">Nome: </label>
-            <input id="nomeContato" type="text" class="contatoCampo--validouFoi" placeholder="Nome completo" required>
-          </div>  
+            <div class="contatoCampo contatoCampo--erro">
+              <label for="emailContato">Email: </label>
+              <input id="emailContato" type="email" class="contatoCampo--validouErro" placeholder="seu_email@dominio" required>
+              <span class="contatoCampo-msg contatoCampo-msg--erro">
+                Você quis dizer <a href="#">gmail.com?</a>
+              </span>
+            </div>
 
-          <div class="contatoCampo contatoCampo--erro">
-            <label for="emailContato">Email: </label>
-            <input id="emailContato" type="email" class="contatoCampo--validouErro" placeholder="seu_email@dominio" required>
-            <span class="contatoCampo-msg contatoCampo-msg--erro">
-              Você quis dizer <a href="#">gmail.com?</a>
-            </span>
-          </div>
+            <div class="contatoCampo contatoCampo--erro">
+              <label for="telefoneContato">Telefone: </label>
+              <input id="telefoneContato" type="tel" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
+              <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
+            </div>     
 
-          <div class="contatoCampo contatoCampo--erro">
-            <label for="telefoneContato">Telefone: </label>
-            <input id="telefoneContato" type="tel" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
-            <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
-          </div>     
+            <div class="contatoCampo">
+              <label for="cepContato">CEP: </label>
+              <input id="cepContato" type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+            </div>
 
-          <div class="contatoCampo">
-            <label for="cepContato">CEP: </label>
-            <input id="cepContato" type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
-          </div>
+            <div class="contatoCampo">
+              <label for="enderecoContato">Endereço: </label>
+              <input id="enderecoContato" type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
+            </div>   
 
-          <div class="contatoCampo">
-            <label for="enderecoContato">Endereço: </label>
-            <input id="enderecoContato" type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
-          </div>   
+            <div class="contatoCampo">
+              <label for="bairroContato">Bairro: </label>
+              <input id="bairroContato" type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
+            </div>   
 
-          <div class="contatoCampo">
-            <label for="bairroContato">Bairro: </label>
-            <input id="bairroContato" type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
-          </div>   
+            <div class="contatoCampo">
+              <label for="cidadeContato">Cidade: </label>
+              <input id="cidadeContato" type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
+            </div>   
 
-          <div class="contatoCampo">
-            <label for="cidadeContato">Cidade: </label>
-            <input id="cidadeContato" type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
-          </div>   
+            <div class="contatoCampo">
+              <label for="estadoContato">Estado: </label>
+              <input id="estadoContato" type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
+            </div>   
 
-          <div class="contatoCampo">
-            <label for="estadoContato">Estado: </label>
-            <input id="estadoContato" type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
-          </div>   
+            <div class="contatoCampo">
+              <label for="mensagemContato">Mensagem: </label>
+              <textarea id="mensagemContato" name="" cols="30" rows="10" required></textarea>
+            </div>
 
-          <div class="contatoCampo">
-            <label for="mensagemContato">Mensagem: </label>
-            <textarea id="mensagemContato" name="" cols="30" rows="10" required></textarea>
-          </div>
+            <div class="contatoCampo">
+              <input id="receberDestaques" type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox">
+              <label for="receberDestaques" class="contatoCampo-label">Receber destaques por email</label>
+            </div>
 
-          <div class="contatoCampo">
-            <input id="receberDestaques" type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox">
-            <label for="receberDestaques" class="contatoCampo-label">Receber destaques por email</label>
-          </div>
-
-          <div class="contatoCampo">
-            <button class="secaoContato-form-cta btnPadrao" type="submit">
-              Enviar mensagem
-            </button>
-            <span class="contatoCampo-msg contatoCampo-msg--erro secaoContatoForm-validacao">
-              Verifique os erros acima
-            </span>
-          </div>
-
+            <div class="contatoCampo">
+              <button class="secaoContato-form-cta btnPadrao" type="submit">
+                Enviar mensagem
+              </button>
+              <span class="contatoCampo-msg contatoCampo-msg--erro secaoContatoForm-validacao">
+                Verifique os erros acima
+              </span>
+            </div>
+        </fieldset>
         </form>
       </div> <!--fim .container da .secaoContato-->
 

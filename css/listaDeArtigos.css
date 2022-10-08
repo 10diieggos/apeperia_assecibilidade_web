@@ -19,16 +19,14 @@
   display: none;
 }
 
-
-.listaDeArtigos-item:not(:target):first-child{
+/* O efeito deste bloco foi substituido por JS */
+/* .listaDeArtigos-item:not(:target):first-child{
   display: inline-block;
 }
 
 .listaDeArtigos-item:target {
   display: inline-block;
-}
-
-
+} */
 
 
 .listaDeArtigos-artigo-img {

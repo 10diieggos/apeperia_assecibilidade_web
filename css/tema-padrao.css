@@ -87,6 +87,10 @@ li[aria-hidden='false'] { display:block ; }
   font-size: 1em;
 }
 
+.border0 {
+  border: 0;
+}
+
 @media (min-width: 830px) {
   .container {
     width: 1200px;

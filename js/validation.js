@@ -7,15 +7,12 @@ let messageOnInvalid = [
 ];
 // 0:input#nomeContato.validarEsteCampo
 // 1:input#emailContato.validarEsteCampo
-// 2:input#telefoneContato.validarEsteCampo
-// 3:input#cepContato.validarEsteCampo
-// 4:textarea#mensagemContato.validarEsteCampo
-let camposParaValidar = document.querySelectorAll('.validarEsteCampo')
-
+// 2:input#cepContato.validarEsteCampo
+// :textarea#mensagemContato.validarEsteCampo
+let camposParaValidar = document.querySelectorAll('.secaoContato-form :required')
 camposParaValidar.forEach(function (campo, indice) {
   campo.oninvalid = () => {
     campo.setCustomValidity('');
-
     if (!campo.validity.valid) {
       campo.setCustomValidity(messageOnInvalid[indice]);
       campo.parentNode.classList.add('contatoCampo--erro');

@@ -18,5 +18,7 @@ Estes cursos foram ministrados pelo especialista em Acessibilidade Natan Souza (
 
 O código integral do Natan está em uma branch chamada natanSantosVersion.
 O código que se encontra aqui na branch main é um tanto diferente sobretudo o JS que é bastante original.
+Isso aconte porque a cada aula busco solucionar o problema enunciado antes de assistir a solução do instrutor.
+Pra variar misturei com um pouquinho de jQuery só pra dar uma praticada de leve.
 Algumas customizações foram feitas no HTML e CSS.
 O deploy acima é do código na main.

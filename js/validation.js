@@ -45,3 +45,7 @@ $('#emailSuggestion').on('click', function (e) {
   )
   sugestaoEmailSpan.style.display = 'none';
 })
+
+$('#emailContato').on('focus', function (e) {
+  sugestaoEmailSpan.style.display = 'none';
+})

@@ -2,7 +2,7 @@
 
 ## Deploy do projeto
 
-https://foul-iris-speedwell.glitch.me/
+https://billowy-zippy-gooseberry.glitch.me/
 
 ## Escopo
 

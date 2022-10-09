@@ -29,25 +29,27 @@ $('#emailContato').on('blur', function(event) {
     // domains: domains,                       // optional para acrescentar mais sugestões
     // topLevelDomains: topLevelDomains,       // optional
     suggested: function(element, suggestion) {
-      $('#emailSuggestion').html("<b><i>" + suggestion.full + "</b></i> ? <span class='escondeVisualmente'>clique aqui para corrigir</span>");
+      $('#emailContato + span').html(`Você quis dizer <a id="emailSuggestion" href="#"><strong><i>${suggestion.full}</i></strong> ?<span class='escondeVisualmente'>clique aqui para corrigir</span></a>`)
+      
       sugestaoEmailSpan.style.display = 'inline-block';
       sugestaoEmailSpan.setAttribute('tabindex', '0');
       sugestaoEmailSpan.focus();
       sugestaoEmailSpan.setAttribute('role', 'status');
+
+      $('#emailSuggestion').on('click', function (e) {
+        e.preventDefault();
+        $('#emailContato').val(
+          $('#emailSuggestion i').html()
+        )
+        sugestaoEmailSpan.style.display = 'none';
+      })
+
     },
     empty: function(element) {
       // callback code
     }
   });
 });
-
-$('#emailSuggestion').on('click', function (e) {
-  e.preventDefault();
-  $('#emailContato').val(
-    $('#emailSuggestion i').html()
-  )
-  sugestaoEmailSpan.style.display = 'none';
-})
 
 $('#emailContato').on('focus', function (e) {
   sugestaoEmailSpan.style.display = 'none';

@@ -31,6 +31,8 @@ $('#emailContato').on('blur', function(event) {
     suggested: function(element, suggestion) {
       $('#emailSuggestion').html("<b><i>" + suggestion.full + "</b></i> ?");
       sugestaoEmailSpan.style.display = 'inline-block';
+      sugestaoEmailSpan.setAttribute('tabindex', '0');
+      sugestaoEmailSpan.focus();
     },
     empty: function(element) {
       // callback code

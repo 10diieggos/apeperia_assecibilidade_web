@@ -111,7 +111,8 @@
   position: relative;
 }
 
-.contatoCampo .contatoCampo--validouErro {
+.contatoCampo .contatoCampo--validouErro,
+.contatoCampo .contatoCampo--validouErro:focus {
   border: 2px solid #FF0000;
   background-color: #fff;
   position: relative;

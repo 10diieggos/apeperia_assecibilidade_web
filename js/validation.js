@@ -16,7 +16,7 @@ camposParaValidar.forEach(function (campo, indice) {
     if (!campo.validity.valid) {
       campo.setCustomValidity(messageOnInvalid[indice]);
       campo.parentNode.classList.add('contatoCampo--erro');
-      campo.classList.add('.contatoCampo--validouErro');
+      campo.classList.add('contatoCampo--validouErro');
     }
   }
 });

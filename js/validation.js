@@ -22,7 +22,7 @@ camposParaValidar.forEach(function (campo, indice) {
 });
 
 // Implementação Mailcheck.js
-sugestaoEmailSpan = document.querySelector('#emailContato + span')
+let sugestaoEmailSpan = document.querySelector('#emailContato + span')
 sugestaoEmailSpan.style.display = 'none'
 $('#emailContato').on('blur', function(event) {
   $(this).mailcheck({

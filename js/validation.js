@@ -43,4 +43,5 @@ $('#emailSuggestion').on('click', function (e) {
   $('#emailContato').val(
     $('#emailSuggestion i').html()
   )
+  sugestaoEmailSpan.style.display = 'none';
 })

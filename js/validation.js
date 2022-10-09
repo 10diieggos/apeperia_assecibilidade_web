@@ -29,10 +29,11 @@ $('#emailContato').on('blur', function(event) {
     // domains: domains,                       // optional para acrescentar mais sugestões
     // topLevelDomains: topLevelDomains,       // optional
     suggested: function(element, suggestion) {
-      $('#emailSuggestion').html("<b><i>" + suggestion.full + "</b></i> ?");
+      $('#emailSuggestion').html("<b><i>" + suggestion.full + "</b></i> ? <span class='escondeVisualmente'>clique aqui para corrigir</span>");
       sugestaoEmailSpan.style.display = 'inline-block';
       sugestaoEmailSpan.setAttribute('tabindex', '0');
       sugestaoEmailSpan.focus();
+      sugestaoEmailSpan.setAttribute('role', 'status');
     },
     empty: function(element) {
       // callback code

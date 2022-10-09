@@ -20,3 +20,20 @@ camposParaValidar.forEach(function (campo, indice) {
     }
   }
 });
+
+// Implementação Mailcheck.js
+sugestaoEmailSpan = document.querySelector('#emailContato + span')
+sugestaoEmailSpan.style.display = 'none'
+$('#emailContato').on('blur', function(event) {
+  $(this).mailcheck({
+    // domains: domains,                       // optional para acrescentar mais sugestões
+    // topLevelDomains: topLevelDomains,       // optional
+    suggested: function(element, suggestion) {
+      $('#emailSuggestion').html("<b><i>" + suggestion.full + "</b></i> ?");
+      sugestaoEmailSpan.style.display = 'block';
+    },
+    empty: function(element) {
+      // callback code
+    }
+  });
+});

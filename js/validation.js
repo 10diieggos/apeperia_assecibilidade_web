@@ -30,10 +30,17 @@ $('#emailContato').on('blur', function(event) {
     // topLevelDomains: topLevelDomains,       // optional
     suggested: function(element, suggestion) {
       $('#emailSuggestion').html("<b><i>" + suggestion.full + "</b></i> ?");
-      sugestaoEmailSpan.style.display = 'block';
+      sugestaoEmailSpan.style.display = 'inline-block';
     },
     empty: function(element) {
       // callback code
     }
   });
 });
+
+$('#emailSuggestion').on('click', function (e) {
+  e.preventDefault();
+  $('#emailContato').val(
+    $('#emailSuggestion i').html()
+  )
+})

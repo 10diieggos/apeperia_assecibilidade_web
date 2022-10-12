@@ -2,7 +2,7 @@
 
 ## Deploy do projeto
 
-https://billowy-zippy-gooseberry.glitch.me/
+https://apeperia-theta.vercel.app/
 
 ## Escopo
 
